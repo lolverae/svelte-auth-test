@@ -10,6 +10,7 @@
     <h1>Logged in</h1>
     <h2>Hello {$page.data.session.user?.name}</h2>
       <img alt="User Profile" src={$page.data.session.user?.image} />
+      <button on:click={() => signOut()}>Sign Out</button>
   {:else}
     <h1>Not logged in</h1>
     <button on:click={() => signIn("github")}>Sign In</button>
