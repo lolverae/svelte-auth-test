@@ -7,10 +7,9 @@
 
 <div class="p-20">
   {#if $page.data.session}
-  <h1>Logged in</h1>
+    <h1>Logged in</h1>
   {:else}
-  <h1>Not logged in</h1>
-  <button>Sign In</button>
+    <h1>Not logged in</h1>
+    <button on:click={() => signIn("github")}>Sign In</button>
   {/if}
-
 </div>
