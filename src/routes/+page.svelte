@@ -24,6 +24,9 @@
     <button type="button" class="btn btn-secondary bg-blue-100 rounded-full text-lg p-2" on:click={() => signIn("github")}>
       Sign In with GitHub
     </button>
+    <button type="button" class="btn btn-secondary bg-blue-100 rounded-full text-lg p-2" on:click={() => signIn("google")}>
+      Sign In with Google
+    </button>
   {/if}
 </div>
 
